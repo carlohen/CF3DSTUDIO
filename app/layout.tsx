@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppFloat } from "@/components/whatsapp-float";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "CF3D Studio | Impressão 3D e Prototipagem",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <main className="pt-16">{children}</main>
           <WhatsAppFloat />
           <ScrollToTop />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
